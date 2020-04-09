@@ -1,0 +1,32 @@
+body,
+html {
+  font-size: 10px;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+    .box {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 0.2rem;
+      background: rgb(27, 16, 16);
+      transition: 1700ms ease;
+      &:hover {
+        transition-duration: 0ms;
+      }
+    }
+  }
+}
